@@ -6,7 +6,7 @@ for planning and operations of energy systems. The focus is on frameworks, libra
 and tutorials, over codes implementing specific energy model (e.g. accompanying a research paper). 
 Even though projects with specific energy model implementations are included given the code quality is high. 
 
-Some things that are out of scope for this page include: IoT/connectivity projects, web/data scrapers, 
+**Note**: Some things that are out of scope for this page include: IoT/connectivity projects, web/data scrapers, 
 visualization tools and data models/ontologies. 
 
 ## Energy Model Categorization
@@ -15,20 +15,13 @@ model type, energy assets included and scale. Here is an outline of all the char
 meaning: 
 
 
-| Characteristics | Fields        |
-| :---            |     :---      |
-| **Code type**   | 🧩 **Framework**: Defines concepts and components that are used to create a solution <br>  📚 **Library**: Functions and classes to solve a specific task, e.g. generating demand profiles. <br> 🎓 **Tutorial**: Educational walkthroughs of specific topics and concepts. <br> 📄 **Code**: Implementation of specific energy model. |
-
-| Name         | Categories     |
-| :---         |     :---:      |
-| **Code type:**       | 🧩 = Framework, 📚 = Library, 🎓 = Tutorial, 📄 = Code |
-| **Problem type:**    | 🎬 = Operations, 📝 = Planning |
-| **Model type:**      | 🎮 = Simulation, 📈 = Forecasting, ⚙️ = Optimization, 🤖 = Agent |
-| **Energy assets:**   | ☀️ = Solar, 🌬️ = Wind, 🔋 = Battery, 💦 = Hydro, ♻️ = Heat pump, ⚡ = Power grid |
-| **Scale:**           | ⚡ = Power transmission, 🏭 = Power plant, 🏙️ = City/Region, 🏘️ = Community, 🏠 = House/building, 🔋 = Asset |
-
-"Model tags" according to: 
-Power flow, UBEM, heat transfer ?
+| Characteristics   | Fields        |
+| :---              | :---          |
+| **Code type**     | 🧩 **Framework**: Defines concepts and components that are used to create a solution <br> 📚 **Library**: Functions and classes to solve a specific task, e.g. generating demand profiles. <br> 🎓 **Tutorial**: Educational walkthroughs of specific topics and concepts. <br> 📄 **Code**: Implementation of specific energy model. |
+| **Problem type**  | 🎬 **Operations**: Operations problem such as dispatch or continuous trading. <br> 📝 **Planning**: Planning problems such as optimal investments or system configuration. |
+| **Model type**    | 🎮 **Simulation**: Simulations of physical processes or behaviour, typically allowing for "what-if"-analysis. <br> 📝 **Prediction**: Forecasting and scenario generation. <br> ⚙️ **Optimization**: Models performing decision optimization. <br> 🤖 **Agents**: Models interacting with and learning from environments. |
+| **Energy assets** | ☀️ **Solar**: Solar PV and solar thermal assets. <br> 🌬️ **Wind**: Wind turbines and wind farms. <br> 🔋 **Battery**: Electrochemical batteries. <br> 💦 **Hydro**: Electrochemical batteries. <br> 💦 **Heat pump**: <br> ⚡ **Heat pump**:  |
+| **Energy assets** | ⚡ **Power transmission**: Scale of power transmission and countries. <br> 🏭 **Power plant**: Front-of-meter power plant scale. <br> 🏙️ **City/Region**: City or region scale. <br> 🏘️ **Community**: Energy community scale. <br> 🏠 **House/building**: House or building scale. <br> 🔋 **Asset**: Asset scale. |
 
 ## How to Contribute? 
 
@@ -40,10 +33,11 @@ In alphabetical order.
 
 |     **Name**     |  Description                                                                         |  Problem type  |   Model type   | Energy assets |     Scale     |     Links     |
 | :---             |     :---                                                                             |     :---:      |     :---:      |     :---:     |     :---:     |     :---:     |
-| `boptest`        | Simulate and benchmark building heat transfer.                                       | 🎬             | 🎮              | 🏠            | 🏠            | [[code]](https://github.com/ibpsa/project1-boptest), [[docs]](https://demandlib.readthedocs.io/en/latest/)    |
-| `demandlib`      | Generate electricity and heating demand profiles.                                    | 📝             | 🎮              | git diff      | 🏠            | [[code]](https://github.com/oemof/demandlib), [[docs]](https://demandlib.readthedocs.io/en/latest/)    |
-| `Hydropowerlib`  | Calculate feed-in time series of run-of-the-river hydropower plants.                 | git diff       | git diff       | git diff      | git diff      | [[code]](https://github.com/hydro-python/hydropowerlib)    |
-| `OSESMO`         | Calculate power flow of distribution grids.                                          | git diff       | git diff       | git diff      | git diff      | [[code]](https://github.com/RyanCMann/OSESMO/)    |
+| `boptest`        | Simulate and benchmark building heat transfer.                                       | 🎬             | 🎮              | 🏠            | 🏠            | [[code]](https://github.com/ibpsa/project1-boptest), [[docs]](https://demandlib.readthedocs.io/en/latest/) |
+| `demandlib`      | Generate electricity and heating demand profiles.                                    | 📝             | 🎮              | git diff      | 🏠            | [[code]](https://github.com/oemof/demandlib), [[docs]](https://demandlib.readthedocs.io/en/latest/) |
+| `Hydropowerlib`  | Calculate feed-in time series of run-of-the-river hydropower plants.                 | git diff       | git diff       | git diff      | git diff      | [[code]](https://github.com/hydro-python/hydropowerlib) |
+| `OpenSTEF`       | Open energy forecasting package.                                                     | 🎬             | 📈              | git diff      | 🏙️ 🏘️         | [[code]](https://github.com/OpenSTEF/openstef), [[docs]](https://openstef.github.io/openstef/), [[PyPI]](https://pypi.org/project/openstef/) |
+| `OSESMO`         | Calculate power flow of distribution grids.                                          | git diff       | git diff       | git diff      | git diff      | [[code]](https://github.com/RyanCMann/OSESMO/) |
 | `pandapower`     | Calculate power flow of distribution grids.                                          | 📝             | 🎮              | ⚡             | 🏙️ 🏘️         | [[code]](https://github.com/e2nIEE/pandapower), [[PyPI]](https://pandapower.readthedocs.io/en/latest/) |
 | `pvlib`          | 📝             | git diff       | 🎮 📈           | ☀️             | 🔋          | [[code]](https://github.com/pvlib/pvlib-python), [[PyPI]](https://pypi.org/project/pvlib/) |
 | `PYPOWER`        | 📝             | git diff       | 🎮 📈           | ⚡             | 🏙️ 🏘️        | [[code]](https://github.com/pvlib/pvlib-python), [[PyPI]](https://pypi.org/project/pvlib/) |
