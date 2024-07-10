@@ -1,4 +1,12 @@
 # awesome-energy-models
+📚 A catalogue and categorization of open-source, Python-based energy models. 
+
+## Table of Contents  
+* [What is this page about?](#what-is-this-page-about)  
+* [How to Contribute?](#how-to-contribute)  
+* [Energy Model Categorization](#energy-model-categorization)  
+* [Energy Models](#energy-models)  
+* [General Tools](#general-tools)  
 
 ## What is this page about? 
 This page is an attempt to catalogize and categorize open-source python-based models 
@@ -8,6 +16,11 @@ Even though projects with specific energy model implementations are included giv
 
 **Note**: Some things that are out of scope for this page include: IoT/connectivity projects, web/data scrapers, 
 visualization tools and data models/ontologies. 
+
+## How to Contribute? 
+
+1) Add a model to list
+2) Update categorization and links
 
 ## Energy Model Categorization
 The energy models are categorized according to several characteristics: code type, problem type, 
@@ -22,11 +35,6 @@ meaning:
 | **Model type**    | 🎮 **Simulation**: Simulations of physical processes or behaviour, typically allowing for "what-if"-analysis. <br> 📝 **Prediction**: Forecasting and scenario generation. <br> ⚙️ **Optimization**: Models performing decision optimization. <br> 🤖 **Agents**: Models interacting with and learning from environments. |
 | **Energy assets** | ☀️ **Solar**: Solar PV and solar thermal assets. <br> 🌬️ **Wind**: Wind turbines and wind farms. <br> 🔋 **Battery**: Electrochemical batteries. <br> 💦 **Hydro**: Electrochemical batteries. <br> 💦 **Heat pump**: <br> ⚡ **Heat pump**:  |
 | **Energy assets** | ⚡ **Power transmission**: Scale of power transmission and countries. <br> 🏭 **Power plant**: Front-of-meter power plant scale. <br> 🏙️ **City/Region**: City or region scale. <br> 🏘️ **Community**: Energy community scale. <br> 🏠 **House/building**: House or building scale. <br> 🔋 **Asset**: Asset scale. |
-
-## How to Contribute? 
-
-1) Add a model to list
-2) Update categorization and links
 
 ## Energy Models
 In alphabetical order. 
