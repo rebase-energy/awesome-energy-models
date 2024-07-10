@@ -28,7 +28,7 @@ meaning:
 1) Add a model to list
 2) Update categorization and links
 
-## Energy Model List
+## Energy Models
 In alphabetical order. 
 
 |     **Name**     |  Description                                                                         |  Problem type  |   Model type   | Energy assets |     Scale     |     Links     |
@@ -43,4 +43,16 @@ In alphabetical order.
 | `PYPOWER`        | 📝             | git diff       | 🎮 📈           | ⚡             | 🏙️ 🏘️        | [[code]](https://github.com/pvlib/pvlib-python), [[PyPI]](https://pypi.org/project/pvlib/) |
 | `windpowerlib`   | Calculate wind power production from meteorological variables.| 📝 🎬           | 🎮 📈           | 🌬️            | 🏭 🏙️ 🔋         | [[code]](https://github.com/wind-python/windpowerlib), [[docs]](https://windpowerlib.readthedocs.io/en/stable/index.html), [[PyPI]](https://pypi.org/project/pvlib/) |
 
-https://github.com/wind-python/windpowerlib
+## General tools
+General tools are frameworks and libraries that are not necessarily energy models but that can be useful 
+for implementation of specific energy models. We categorize these tools into:
+* 🎮 Physics or data driven simulation tools.
+* 📈 Statistical and machine learning prediction tools.
+* ☀️ Optimization tools. 
+
+|     **Name**     |  Description                                                                         |   Tool type   |   Links     |
+| :---             |     :---                                                                             |     :---:     |   :---:     |
+| `catboost`       | A fast gradient boosting library with special treatment of categorical features.     | 📈            | [[code]](https://github.com/catboost/catboost), [[docs]](https://catboost.ai/en/docs/), [[PyPI]](https://pypi.org/project/catboost/) |
+| `lightgbm`       | A fast gradient boosting library for tasks including regression and prediction.      | 📈            | [[code]](https://github.com/microsoft/LightGBM), [[docs]](https://lightgbm.readthedocs.io/en/latest/), [[PyPI]](https://pypi.org/project/lightgbm/) |
+| `pyomo`          | An object-oriented algebraic modeling language for structured optimization problems. | ☀️             | [[code]](https://github.com/Pyomo/pyomo), [[docs]](https://pyomo.readthedocs.io/en/stable/), [[PyPI]](https://pypi.org/project/Pyomo/) |
+
