@@ -1,8 +1,11 @@
-<h1 style="text-align: center;">📚 awesome-energy-models</h1>
+<h1 align="center">
+    📚 awesome-energy-models
+    <br>
+</h1>
 
-<p style="text-align: center;">
-A catalogue and categorization of open-source, Python-based energy models for energy system planning and operations.  
-</p> 
+<p align="center">
+    <strong>A catalogue and categorization of open-source, Python-based energy models for energy system planning and operations.</strong>
+</p>
 
 ## Table of Contents  
 * [What is this page about?](#what-is-this-page-about)  
@@ -46,11 +49,12 @@ In alphabetical order.
 | :---             |     :---                                                                             |     :---:      |     :---:      |     :---:     |     :---:     |     :---:     |
 | `boptest`        | Simulate and benchmark building heat transfer.                                       | 🎬             | 🎮              | 🏠            | 🏠            | [[code]](https://github.com/ibpsa/project1-boptest), [[docs]](https://demandlib.readthedocs.io/en/latest/) |
 | `demandlib`      | Generate electricity and heating demand profiles.                                    | 📝             | 🎮              | git diff      | 🏠            | [[code]](https://github.com/oemof/demandlib), [[docs]](https://demandlib.readthedocs.io/en/latest/) |
+| `Grid2Op`        | A framework to model sequential decision making in power grid operations.            | 🎬             | 🎮 📝 ⚙️ 🤖       | ⚡            | ⚡             | [```Code```](https://github.com/rte-france/Grid2Op) [```Website```](https://l2rpn.chalearn.org/) [```Docs```](https://grid2op.readthedocs.io/en/latest/) [```PyPI```](https://pypi.org/project/Grid2Op/) |
 | `Hydropowerlib`  | Calculate feed-in time series of run-of-the-river hydropower plants.                 | git diff       | git diff       | git diff      | git diff      | [[code]](https://github.com/hydro-python/hydropowerlib) |
 | `OpenSTEF`       | Open energy forecasting package.                                                     | 🎬             | 📈              | git diff      | 🏙️ 🏘️         | [[code]](https://github.com/OpenSTEF/openstef), [[docs]](https://openstef.github.io/openstef/), [[PyPI]](https://pypi.org/project/openstef/) |
 | `OSESMO`         | Calculate power flow of distribution grids.                                          | git diff       | git diff       | git diff      | git diff      | [[code]](https://github.com/RyanCMann/OSESMO/) |
 | `pandapower`     | Calculate power flow of distribution grids.                                          | 📝             | 🎮              | ⚡             | 🏙️ 🏘️         | [[code]](https://github.com/e2nIEE/pandapower), [[PyPI]](https://pandapower.readthedocs.io/en/latest/) |
-| `pvlib`          | Functions for simulating and forecasting photovoltaic energy systems.                | git diff       | 🎮 📈           | ☀️             | 🔋          | [[code]](https://github.com/pvlib/pvlib-python), [[PyPI]](https://pypi.org/project/pvlib/) |
+| `pvlib`          | Functions for simulating and forecasting photovoltaic energy systems.                | 🎬 📝           | 🎮 📈           | ☀️             | 🔋            | [[code]](https://github.com/pvlib/pvlib-python), [[PyPI]](https://pypi.org/project/pvlib/) |
 | `PYPOWER`        | 📝             | git diff       | 🎮 📈           | ⚡             | 🏙️ 🏘️        | [[code]](https://github.com/pvlib/pvlib-python), [[PyPI]](https://pypi.org/project/pvlib/) |
 | `windpowerlib`   | Calculate wind power production from meteorological variables.| 📝 🎬           | 🎮 📈           | 🌬️            | 🏭 🏙️ 🔋         | [[code]](https://github.com/wind-python/windpowerlib), [[docs]](https://windpowerlib.readthedocs.io/en/stable/index.html), [[PyPI]](https://pypi.org/project/pvlib/) |
 
@@ -65,7 +69,8 @@ for implementation of specific energy models. We categorize these tools into:
 |     **Name**     |  Description                                                                         |   Tool type   |   Links     |
 | :---             |     :---                                                                             |     :---:     |   :---:     |
 | `catboost`       | A fast gradient boosting library with special treatment of categorical features.     | 📈            | [[code]](https://github.com/catboost/catboost), [[docs]](https://catboost.ai/en/docs/), [[PyPI]](https://pypi.org/project/catboost/) |
-| `lightgbm`       | A fast gradient boosting library for tasks including regression/prediction.          | 📈            | [[code]](https://github.com/microsoft/LightGBM), [[docs]](https://lightgbm.readthedocs.io/en/latest/), [[PyPI]](https://pypi.org/project/lightgbm/) |
+| `cvxopt`         | Framework for convex optimization in python.                                         | ☀️             | [[code]](https://github.com/catboost/catboost), [[docs]](https://catboost.ai/en/docs/), [[PyPI]](https://pypi.org/project/cvxopt/) |
+| `lightgbm`       | A fast gradient boosting library for tasks including regression/prediction.          | 📈            | [[code]](https://github.com/cvxopt/cvxopt), [[docs]](https://cvxopt.org/userguide/), [[PyPI]](https://pypi.org/project/lightgbm/) |
 | `pyomo`          | An object-oriented algebraic modeling language for structured optimization problems. | ☀️             | [[code]](https://github.com/Pyomo/pyomo), [[docs]](https://pyomo.readthedocs.io/en/stable/), [[PyPI]](https://pypi.org/project/Pyomo/) |
 | `scikit-learn`   | The go-to machine learning library for Python.                                       | 📈            | [[code]](https://github.com/scikit-learn/scikit-learn), [[docs]](https://scikit-learn.org/stable/), [[PyPI]](https://pypi.org/project/scikit-learn/) |
 | `shap`           | A game theoretic approach to explain the output of any machine learning model.       | 📈            | [[code]](https://github.com/shap/shap), [[docs]](https://shap.readthedocs.io/en/latest/), [[PyPI]](https://pypi.org/project/shap/) |
