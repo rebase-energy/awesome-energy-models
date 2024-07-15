@@ -1,5 +1,8 @@
-# awesome-energy-models
-📚 A catalogue and categorization of open-source, Python-based energy models. 
+<h1 style="text-align: center;">📚 awesome-energy-models</h1>
+
+<p style="text-align: center;">
+A catalogue and categorization of open-source, Python-based energy models for energy system planning and operations.  
+</p> 
 
 ## Table of Contents  
 * [What is this page about?](#what-is-this-page-about)  
@@ -32,9 +35,9 @@ meaning:
 | :---              | :---          |
 | **Code type**     | 🧩 **Framework**: Defines concepts and components that are used to create a solution <br> 📚 **Library**: Functions and classes to solve a specific task, e.g. generating demand profiles. <br> 🎓 **Tutorial**: Educational walkthroughs of specific topics and concepts. <br> 📄 **Code**: Implementation of specific energy model. |
 | **Problem type**  | 🎬 **Operations**: Operations problem such as dispatch or continuous trading. <br> 📝 **Planning**: Planning problems such as optimal investments or system configuration. |
-| **Model type**    | 🎮 **Simulation**: Simulations of physical processes or behaviour, typically allowing for "what-if"-analysis. <br> 📝 **Prediction**: Forecasting and scenario generation. <br> ⚙️ **Optimization**: Models performing decision optimization. <br> 🤖 **Agents**: Models interacting with and learning from environments. |
-| **Energy assets** | ☀️ **Solar**: Solar PV and solar thermal assets. <br> 🌬️ **Wind**: Wind turbines and wind farms. <br> 🔋 **Battery**: Electrochemical batteries. <br> 💦 **Hydro**: Electrochemical batteries. <br> 💦 **Heat pump**: <br> ⚡ **Heat pump**:  |
-| **Energy assets** | ⚡ **Power transmission**: Scale of power transmission and countries. <br> 🏭 **Power plant**: Front-of-meter power plant scale. <br> 🏙️ **City/Region**: City or region scale. <br> 🏘️ **Community**: Energy community scale. <br> 🏠 **House/building**: House or building scale. <br> 🔋 **Asset**: Asset scale. |
+| **Model type**    | 🎮 **Simulation**: Physical or behaviour simulations, typically allowing for "what-if"-analysis. <br> 📝 **Prediction**: Forecasting and scenario generation. <br> ⚙️ **Optimization**: Models performing decision optimization. <br> 🤖 **Agents**: Models interacting with and learning from environments. |
+| **Energy assets** | ☀️ **Solar**: Solar PV and solar thermal assets. <br> 🌬️ **Wind**: Wind turbines and wind farms. <br> 🔋 **Battery**: Electrochemical batteries. <br> 💦 **Hydro**: Electrochemical batteries. <br> 💦 **Heat pump**: <br> ⚡ **Power grid**:  |
+| **Scale**         | ⚡ **Power transmission**: Scale of power transmission and countries. <br> 🏭 **Power plant**: Front-of-meter power plant scale. <br> 🏙️ **City/Region**: City or region scale. <br> 🏘️ **Community**: Energy community scale. <br> 🏠 **House/building**: House or building scale. <br> 🔋 **Asset**: Asset scale. |
 
 ## Energy Models
 In alphabetical order. 
@@ -47,7 +50,7 @@ In alphabetical order.
 | `OpenSTEF`       | Open energy forecasting package.                                                     | 🎬             | 📈              | git diff      | 🏙️ 🏘️         | [[code]](https://github.com/OpenSTEF/openstef), [[docs]](https://openstef.github.io/openstef/), [[PyPI]](https://pypi.org/project/openstef/) |
 | `OSESMO`         | Calculate power flow of distribution grids.                                          | git diff       | git diff       | git diff      | git diff      | [[code]](https://github.com/RyanCMann/OSESMO/) |
 | `pandapower`     | Calculate power flow of distribution grids.                                          | 📝             | 🎮              | ⚡             | 🏙️ 🏘️         | [[code]](https://github.com/e2nIEE/pandapower), [[PyPI]](https://pandapower.readthedocs.io/en/latest/) |
-| `pvlib`          | 📝             | git diff       | 🎮 📈           | ☀️             | 🔋          | [[code]](https://github.com/pvlib/pvlib-python), [[PyPI]](https://pypi.org/project/pvlib/) |
+| `pvlib`          | Functions for simulating and forecasting photovoltaic energy systems.                | git diff       | 🎮 📈           | ☀️             | 🔋          | [[code]](https://github.com/pvlib/pvlib-python), [[PyPI]](https://pypi.org/project/pvlib/) |
 | `PYPOWER`        | 📝             | git diff       | 🎮 📈           | ⚡             | 🏙️ 🏘️        | [[code]](https://github.com/pvlib/pvlib-python), [[PyPI]](https://pypi.org/project/pvlib/) |
 | `windpowerlib`   | Calculate wind power production from meteorological variables.| 📝 🎬           | 🎮 📈           | 🌬️            | 🏭 🏙️ 🔋         | [[code]](https://github.com/wind-python/windpowerlib), [[docs]](https://windpowerlib.readthedocs.io/en/stable/index.html), [[PyPI]](https://pypi.org/project/pvlib/) |
 
@@ -57,10 +60,13 @@ for implementation of specific energy models. We categorize these tools into:
 * 🎮 Physics or data driven simulation tools.
 * 📈 Statistical and machine learning prediction tools.
 * ☀️ Optimization tools. 
+* 🤓 Explainability and interpretability tools. 
 
 |     **Name**     |  Description                                                                         |   Tool type   |   Links     |
 | :---             |     :---                                                                             |     :---:     |   :---:     |
 | `catboost`       | A fast gradient boosting library with special treatment of categorical features.     | 📈            | [[code]](https://github.com/catboost/catboost), [[docs]](https://catboost.ai/en/docs/), [[PyPI]](https://pypi.org/project/catboost/) |
-| `lightgbm`       | A fast gradient boosting library for tasks including regression and prediction.      | 📈            | [[code]](https://github.com/microsoft/LightGBM), [[docs]](https://lightgbm.readthedocs.io/en/latest/), [[PyPI]](https://pypi.org/project/lightgbm/) |
+| `lightgbm`       | A fast gradient boosting library for tasks including regression/prediction.          | 📈            | [[code]](https://github.com/microsoft/LightGBM), [[docs]](https://lightgbm.readthedocs.io/en/latest/), [[PyPI]](https://pypi.org/project/lightgbm/) |
 | `pyomo`          | An object-oriented algebraic modeling language for structured optimization problems. | ☀️             | [[code]](https://github.com/Pyomo/pyomo), [[docs]](https://pyomo.readthedocs.io/en/stable/), [[PyPI]](https://pypi.org/project/Pyomo/) |
-
+| `scikit-learn`   | The go-to machine learning library for Python.                                       | 📈            | [[code]](https://github.com/scikit-learn/scikit-learn), [[docs]](https://scikit-learn.org/stable/), [[PyPI]](https://pypi.org/project/scikit-learn/) |
+| `shap`           | A game theoretic approach to explain the output of any machine learning model.       | 📈            | [[code]](https://github.com/shap/shap), [[docs]](https://shap.readthedocs.io/en/latest/), [[PyPI]](https://pypi.org/project/shap/) |
+| `xgboost`        | Extreme gradient boosting algorithm for tasks including regression/prediction.       | 📈            | [[code]](https://github.com/dmlc/xgboost), [[docs]](https://xgboost.readthedocs.io/en/stable/), [[PyPI]](https://pypi.org/project/xgboost/) |
