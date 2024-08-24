@@ -62,6 +62,11 @@ In alphabetical order.
 | `PYPOWER`        | 📝             | git diff       | 🎮 📈           | ⚡             | 🏙️ 🏘️        | [[code]](https://github.com/pvlib/pvlib-python), [[PyPI]](https://pypi.org/project/pvlib/) |
 | `windpowerlib`   | Calculate wind power production from meteorological variables.| 📝 🎬           | 🎮 📈           | 🌬️            | 🏭 🏙️ 🔋         | [[code]](https://github.com/wind-python/windpowerlib), [[docs]](https://windpowerlib.readthedocs.io/en/stable/index.html), [[PyPI]](https://pypi.org/project/pvlib/) |
 
+| name | description | code_type | problem_type | model_type | energy_assets | scale | links |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+|alite|Calculate renewable power potentials and time series.|📚|📝|🎮|☀️🌬️|⚡|[[code]](https://github.com/pypsa/atlite), [[documentation]](https://alite.readthedocs.io/en/latest/), [[pypi]](https://pypi.org/project/alite/), [[website]](https://pypsa.org/)|
+|demandlib|Generate electricity and heating demand profiles.|📚|📝|🎮|🏠|🏠|[[code]](https://github.com/oemof/demandlib), [[documentation]](https://demandlib.readthedocs.io/en/latest/), [[pypi]](https://pypi.org/project/demandlib/)|
+
 https://github.com/RWTH-EBC/pyCity
 https://github.com/RWTH-EBC/TEASER
 https://github.com/calliope-project/calliope
@@ -69,6 +74,7 @@ https://github.com/NREL/pysam
 https://github.com/NREL/floris
 https://github.com/DTUWindEnergy/PyWake
 https://github.com/DTUWindEnergy/hydesign
+https://github.com/RAMP-project/RAMP-mobility
 
 ## Tutorials and examples
 
@@ -99,6 +105,9 @@ for implementation of specific energy models. We categorize these tools into:
 | `rsome`          | Robust Stochastic Optimization Made Easy.                                            | ⚙️             | [[code]](https://github.com/XiongPengNUS/rsome), [[docs]](https://xiongpengnus.github.io/rsome/), [[PyPI]](https://pypi.org/project/rsome/) |
 | `xgboost`        | Extreme gradient boosting algorithm for tasks including regression/prediction.       | 📈            | [[code]](https://github.com/dmlc/xgboost), [[docs]](https://xgboost.readthedocs.io/en/stable/), [[PyPI]](https://pypi.org/project/xgboost/) |
 
-
+Other Awesome pages: 
+https://opentimeseries.com/
 
 https://en.wikipedia.org/wiki/Open_energy_system_models
+https://github.com/vacanza/python-holidays
+https://github.com/RAMP-project/RAMP

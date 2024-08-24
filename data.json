@@ -1,0 +1,31 @@
+[
+{
+    "name": "alite",
+    "description": "Calculate renewable power potentials and time series.",
+    "code_type": ["library"],
+    "problem_type": ["planning"],
+    "model_type": ["simulation"],
+    "energy_assets": ["solar", "wind"],
+    "scale": ["transmission"],
+    "links": {
+        "code": "https://github.com/pypsa/atlite",
+        "documentation": "https://alite.readthedocs.io/en/latest/",
+        "pypi": "https://pypi.org/project/alite/", 
+        "website": "https://pypsa.org/"
+    }
+},
+{
+    "name": "demandlib",
+    "description": "Generate electricity and heating demand profiles.",
+    "code_type": ["library"],
+    "problem_type": ["planning"],
+    "model_type": ["simulation"],
+    "energy_assets": ["building"],
+    "scale": ["building"],
+    "links": {
+        "code": "https://github.com/oemof/demandlib",
+        "documentation": "https://demandlib.readthedocs.io/en/latest/",
+        "pypi": "https://pypi.org/project/demandlib/"
+    }
+}
+]

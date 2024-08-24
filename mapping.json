@@ -1,0 +1,37 @@
+{
+    "code_type": {
+        "framework": "🧩",
+        "library": "📚",
+        "tutorial": "🎓",
+        "code": "📄"
+    },
+    "problem_type": {
+        "operations": "🎬",
+        "planning": "📝"
+    },
+    "model_type": {
+        "simulation": "🎮",
+        "prediction": "📈",
+        "optimization": "⚙️",
+        "agents": "🤖"
+    },
+    "energy_assets": {
+        "solar": "☀️",
+        "wind": "🌬️",
+        "battery": "🔋",
+        "hydro": "💦",
+        "heatpump": "🌡️",
+        "grid": "⚡",
+        "building": "🏠"
+    },
+    "scale": {
+        "transmission": "⚡",
+        "powerplant": "🏭",
+        "region": "🏙️",
+        "city": "🏙️",
+        "community": "🏘️",
+        "building": "🏠",
+        "house": "🏠",
+        "asset": "🔋"
+    }
+}
