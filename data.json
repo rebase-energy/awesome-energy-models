@@ -9,7 +9,7 @@
     "scale": ["transmission"],
     "links": {
         "code": "https://github.com/pypsa/atlite",
-        "documentation": "https://alite.readthedocs.io/en/latest/",
+        "docs": "https://alite.readthedocs.io/en/latest/",
         "pypi": "https://pypi.org/project/alite/", 
         "website": "https://pypsa.org/"
     }
@@ -24,7 +24,7 @@
     "scale": ["building"],
     "links": {
         "code": "https://github.com/oemof/demandlib",
-        "documentation": "https://demandlib.readthedocs.io/en/latest/",
+        "docs": "https://demandlib.readthedocs.io/en/latest/",
         "pypi": "https://pypi.org/project/demandlib/"
     }
 }
