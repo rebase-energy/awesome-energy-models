@@ -4,9 +4,14 @@ import json
 def json_to_markdown_table(json_data, mapping):
     # Extracting headers
     headers = ["name", "description", "code_type", "problem_type", "model_type", "energy_assets", "scale", "links"]
-    alignments = [":---", ":---", ":---:", ":---:", ":---:", ":---:", ":---:", ":---:"]
+    alignments = {"name": ":---", "description": ":---", "code_type": ":---:", "problem_type": ":---:", "model_type": ":---:", "energy_assets": ":---:", "scale": ":---:", "links": ":---:"}
 
-    header_row = '| ' + ' | '.join(headers) + ' |'
+    include_headers = ["name", "description", "problem_type", "model_type", "energy_assets", "links"]
+    alignments = [alignments[header] for header in include_headers]
+
+    display_headers = convert_string(include_headers)
+
+    header_row = '| ' + ' | '.join(display_headers) + ' |'
     separator_row = '| ' + ' | '.join(alignments) + ' |'
 
     # Extracting rows
@@ -17,7 +22,7 @@ def json_to_markdown_table(json_data, mapping):
         if missing_keys:
             raise ValueError(f"Error in element at index {idx_entry}: Missing keys {missing_keys}")
         
-        for header in entry.keys():
+        for header in include_headers:
             if header in ["name", "description"]:
                 row = row + entry[header]
             if header in mapping:
@@ -50,6 +55,15 @@ def insert_table(source_file="model_table.md", read_file="README_notable.md", ta
 
     with open(target_file, 'w') as file: 
         file.write(new_content)
+
+def convert_string(old_list): 
+    new_list = []
+    for old_string in old_list:
+        words = old_string.split('_')
+        new_string = ' '.join(word.capitalize() for word in words)
+        new_list.append(new_string)
+
+    return new_list
 
 if __name__ == "__main__":
     # Read JSON data from a file

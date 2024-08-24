@@ -62,10 +62,10 @@ In alphabetical order.
 | `PYPOWER`        | 📝             | git diff       | 🎮 📈           | ⚡             | 🏙️ 🏘️        | [[code]](https://github.com/pvlib/pvlib-python), [[PyPI]](https://pypi.org/project/pvlib/) |
 | `windpowerlib`   | Calculate wind power production from meteorological variables.| 📝 🎬           | 🎮 📈           | 🌬️            | 🏭 🏙️ 🔋         | [[code]](https://github.com/wind-python/windpowerlib), [[docs]](https://windpowerlib.readthedocs.io/en/stable/index.html), [[PyPI]](https://pypi.org/project/pvlib/) |
 
-| name | description | code_type | problem_type | model_type | energy_assets | scale | links |
-| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-|alite|Calculate renewable power potentials and time series.|📚|📝|🎮|☀️🌬️|⚡|[[code]](https://github.com/pypsa/atlite), [[documentation]](https://alite.readthedocs.io/en/latest/), [[pypi]](https://pypi.org/project/alite/), [[website]](https://pypsa.org/)|
-|demandlib|Generate electricity and heating demand profiles.|📚|📝|🎮|🏠|🏠|[[code]](https://github.com/oemof/demandlib), [[documentation]](https://demandlib.readthedocs.io/en/latest/), [[pypi]](https://pypi.org/project/demandlib/)|
+| Name | Description | Problem Type | Model Type | Energy Assets | Links |
+| :--- | :--- | :---: | :---: | :---: | :---: |
+|alite|Calculate renewable power potentials and time series.|📝|🎮|☀️🌬️|[[code]](https://github.com/pypsa/atlite), [[documentation]](https://alite.readthedocs.io/en/latest/), [[pypi]](https://pypi.org/project/alite/), [[website]](https://pypsa.org/)|
+|demandlib|Generate electricity and heating demand profiles.|📝|🎮|🏠|[[code]](https://github.com/oemof/demandlib), [[documentation]](https://demandlib.readthedocs.io/en/latest/), [[pypi]](https://pypi.org/project/demandlib/)|
 
 https://github.com/RWTH-EBC/pyCity
 https://github.com/RWTH-EBC/TEASER
