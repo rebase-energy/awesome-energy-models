@@ -23,7 +23,9 @@ def json_to_markdown_table(json_data, mapping):
             raise ValueError(f"Error in element at index {idx_entry}: Missing keys {missing_keys}")
         
         for header in include_headers:
-            if header in ["name", "description"]:
+            if header == "name":
+                row = row + "`" + entry[header] + "`"
+            if header == "description":
                 row = row + entry[header]
             if header in mapping:
                 for key in entry[header]:
