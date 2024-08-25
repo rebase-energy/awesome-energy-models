@@ -28,8 +28,9 @@ def json_to_markdown_table(json_data, mapping):
             if header == "description":
                 row = row + entry[header]
             if header in mapping:
-                for key in entry[header]:
-                     row = row + mapping[header][key]
+                for idx_key, key in enumerate(entry[header]):
+                    row = row + mapping[header][key]
+                    if idx_key < len(entry[header])-1: row = row + " "
             if header in ["links"]:
                 for idx_key, key in enumerate(entry[header]):
                     row = row + "[[" + key + "]]" + "(" + entry[header][key] + ")" 
