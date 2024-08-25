@@ -191,5 +191,60 @@
         "docs": "https://rwl.github.io/PYPOWER/api/",
         "pypi": "https://pypi.org/project/PYPOWER/"
     }
+},
+{
+    "name": "pyCity",
+    "description": "Python package for data handling and scenario generation of city districts.",
+    "code_type": ["framework"],
+    "problem_type": ["planning"],
+    "model_type": ["simulation"],
+    "energy_assets": ["building", "solar", "wind", "battery"],
+    "scale": ["city", "community"],
+    "links": {
+        "code": "https://github.com/RWTH-EBC/pyCity",
+        "pypi": "https://pypi.org/project/pycity-base/"
+    }
+},
+{
+    "name": "TEASER",
+    "description": "Tool for Energy Analysis and Simulation for Efficient Retrofit.",
+    "code_type": ["library"],
+    "problem_type": ["planning"],
+    "model_type": ["simulation"],
+    "energy_assets": ["building"],
+    "scale": ["building"],
+    "links": {
+        "code": "https://github.com/RWTH-EBC/TEASER",
+        "pypi": "https://pypi.org/project/teaser/"
+    }
+},
+{
+    "name": "pysam",
+    "description": "Python Wrapper for the System Advisor Model (SAM).",
+    "code_type": ["framework"],
+    "problem_type": ["planning"],
+    "model_type": ["simulation"],
+    "energy_assets": ["building", "solar", "wind", "battery"],
+    "scale": ["community", "building"],
+    "links": {
+        "code": "https://github.com/NREL/pysam",
+        "docs": "https://nrel-pysam.readthedocs.io/en/main/",
+        "pypi": "https://pypi.org/project/pysam/"
+    }
+},
+{
+    "name": "calliope",
+    "description": "A multi-scale energy systems modelling framework.",
+    "code_type": ["framework"],
+    "problem_type": ["planning"],
+    "model_type": ["simulation"],
+    "energy_assets": ["powergrid", "fossil", "solar", "wind", "battery"],
+    "scale": ["transmission", "region"],
+    "links": {
+        "code": "https://github.com/calliope-project/calliope",
+        "docs": "https://calliope.readthedocs.io/en/stable/",
+        "pypi": "https://pypi.org/project/calliope/",
+        "website": "https://www.callio.pe/"
+    }
 }
 ]

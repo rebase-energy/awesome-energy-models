@@ -23,7 +23,9 @@
         "heatpump": "🌡️",
         "powergrid": "⚡",
         "heatgrid": "♨️",
-        "building": "🏠"
+        "building": "🏠",
+        "fossil": "🏭",
+        "nuclear": "☢️"
     },
     "scale": {
         "transmission": "⚡",
