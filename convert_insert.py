@@ -44,7 +44,7 @@ def json_to_markdown_table(json_data, mapping):
         file.write(markdown_table)
 
 
-def insert_table(source_file="model_table.md", read_file="README_notable.md", target_file="README.md", placeholder="<!-- table_placeholder -->"):
+def insert_table(source_file="model_table.md", read_file="README_no_table.md", target_file="README.md", placeholder="<!-- table_placeholder -->"):
     with open(source_file, 'r') as f:
         table_content = f.read()
 

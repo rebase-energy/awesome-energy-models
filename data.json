@@ -27,5 +27,169 @@
         "docs": "https://demandlib.readthedocs.io/en/latest/",
         "pypi": "https://pypi.org/project/demandlib/"
     }
+},
+{
+    "name": "Grid2Op",
+    "description": "A framework to model sequential decision making in power grid operations.",
+    "code_type": ["framework"],
+    "problem_type": ["operations"],
+    "model_type": ["simulation", "prediction", "optimization", "agent"],
+    "energy_assets": ["powergrid"],
+    "scale": ["transmission"],
+    "links": {
+        "code": "https://github.com/rte-france/Grid2Op",
+        "docs": "https://grid2op.readthedocs.io/en/latest/",
+        "pypi": "https://pypi.org/project/Grid2Op/",
+        "website": "https://l2rpn.chalearn.org/"
+    }
+},
+{
+    "name": "HOPP",
+    "description": "Assess optimal designs for the deployment of utility-scale hybrid energy plants.",
+    "code_type": ["library"],
+    "problem_type": ["planning"],
+    "model_type": ["simulation"],
+    "energy_assets": ["solar", "wind", "battery"],
+    "scale": ["powerplant", "asset"],
+    "links": {
+        "code": "https://github.com/NREL/HOPP",
+        "docs": "https://hopp.readthedocs.io/en/latest/",
+        "pypi": "https://pypi.org/project/HOPP/"
+    }
+},
+{
+    "name": "Hydropowerlib",
+    "description": "Calculate feed-in time series of run-of-the-river hydropower plants.",
+    "code_type": ["library"],
+    "problem_type": ["planning"],
+    "model_type": ["simulation"],
+    "energy_assets": ["hydro"],
+    "scale": ["powerplant"],
+    "links": {
+        "code": "https://github.com/hydro-python/hydropowerlib"
+    }
+},
+{
+    "name": "boptest",
+    "description": "Simulate and benchmark building heat transfer.",
+    "code_type": ["framework"],
+    "problem_type": ["operations"],
+    "model_type": ["simulation", "optimization"],
+    "energy_assets": ["building"],
+    "scale": ["building"],
+    "links": {
+        "code": "https://github.com/ibpsa/project1-boptest"
+    }
+},
+{
+    "name": "OpenSTEF",
+    "description": "Open energy forecasting package.",
+    "code_type": ["library"],
+    "problem_type": ["operations"],
+    "model_type": ["prediction"],
+    "energy_assets": ["solar", "wind"],
+    "scale": ["city", "community"],
+    "links": {
+        "code": "https://github.com/OpenSTEF/openstef",
+        "docs": "https://openstef.github.io/openstef/",
+        "pypi": "https://pypi.org/project/openstef/"
+    }
+},
+{
+    "name": "OSESMO",
+    "description": "Calculate power flow of distribution grids.",
+    "code_type": ["library"],
+    "problem_type": ["planning"],
+    "model_type": ["simulation"],
+    "energy_assets": ["powergrid"],
+    "scale": ["region", "community"],
+    "links": {
+        "code": "https://github.com/RyanCMann/OSESMO/"
+    }
+},
+{
+    "name": "pandapower",
+    "description": "Calculate power flow of distribution grids.",
+    "code_type": ["library"],
+    "problem_type": ["planning"],
+    "model_type": ["simulation"],
+    "energy_assets": ["powergrid"],
+    "scale": ["region", "community"],
+    "links": {
+        "code": "https://github.com/e2nIEE/pandapower",
+        "docs": "https://pandapower.readthedocs.io/en/latest/",
+        "pypi": "https://pypi.org/project/pandapower/"
+    }
+}, 
+{
+    "name": "pandapipes",
+    "description": "Calculate fluid flow of pipe systems.",
+    "code_type": ["library"],
+    "problem_type": ["planning"],
+    "model_type": ["simulation"],
+    "energy_assets": ["heatgrid"],
+    "scale": ["region", "community"],
+    "links": {
+        "code": "https://github.com/e2nIEE/pandapipes",
+        "docs": "https://pandapipes.readthedocs.io/en/latest/",
+        "pypi": "https://pypi.org/project/pandapipes/",
+        "website": "https://www.pandapipes.org/"
+    }
+},
+{
+    "name": "proloaf",
+    "description": "Probabilistic electricity load forecasting using recurrent neural networks.",
+    "code_type": ["library"],
+    "problem_type": ["operations"],
+    "model_type": ["prediction"],
+    "energy_assets": ["powergrid"],
+    "scale": ["region", "community"],
+    "links": {
+        "code": "https://github.com/sogno-platform/proloaf",
+        "pypi": "https://pypi.org/project/proloaf/"
+    }
+},
+{
+    "name": "pvlib",
+    "description": "Functions for simulating and forecasting photovoltaic energy systems.",
+    "code_type": ["library"],
+    "problem_type": ["planning"],
+    "model_type": ["simulation", "prediction"],
+    "energy_assets": ["solar"],
+    "scale": ["powerplant", "asset"],
+    "links": {
+        "code": "https://github.com/pvlib/pvlib-python",
+        "docs": "https://pvlib-python.readthedocs.io/en/stable/",
+        "pypi": "https://pypi.org/project/pvlib/"
+    }
+},
+{
+    "name": "windpowerlib",
+    "description": "Calculate wind power production from meteorological variables.",
+    "code_type": ["library"],
+    "problem_type": ["planning"],
+    "model_type": ["simulation", "prediction"],
+    "energy_assets": ["wind"],
+    "scale": ["powerplant", "asset"],
+    "links": {
+        "code": "https://github.com/wind-python/windpowerlib",
+        "docs": "https://windpowerlib.readthedocs.io/en/stable/index.html",
+        "pypi": "https://pypi.org/project/windpowerlib/",
+        "website": "https://oemof.org/"
+    }
+},
+{
+    "name": "PYPOWER",
+    "description": "Power flow and Optimal Power Flow (OPF) solver. Port from MATPOWER to Python.",
+    "code_type": ["library"],
+    "problem_type": ["planning"],
+    "model_type": ["simulation"],
+    "energy_assets": ["powergrid"],
+    "scale": ["transmission", "region"],
+    "links": {
+        "code": "https://github.com/rwl/PYPOWER",
+        "docs": "https://rwl.github.io/PYPOWER/api/",
+        "pypi": "https://pypi.org/project/PYPOWER/"
+    }
 }
 ]

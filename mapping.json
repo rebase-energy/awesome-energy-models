@@ -13,7 +13,7 @@
         "simulation": "🎮",
         "prediction": "📈",
         "optimization": "⚙️",
-        "agents": "🤖"
+        "agent": "🤖"
     },
     "energy_assets": {
         "solar": "☀️",
@@ -21,7 +21,8 @@
         "battery": "🔋",
         "hydro": "💦",
         "heatpump": "🌡️",
-        "grid": "⚡",
+        "powergrid": "⚡",
+        "heatgrid": "♨️",
         "building": "🏠"
     },
     "scale": {
