@@ -111,6 +111,31 @@ def convert_string(old_list):
 
     return new_list
 
+def custom_json_dump(data, indent=2):
+    def format_dict(d, level=1):
+        indent_space = ' ' * (level * indent)
+        items = []
+        for key, value in d.items():
+            if isinstance(value, dict):
+                formatted_value = format_dict(value, level + 1)
+                items.append(f'{indent_space}"{key}": {formatted_value}')
+            elif isinstance(value, list):
+                # Keep lists on the same line
+                list_items = ', '.join(json.dumps(item) for item in value)
+                items.append(f'{indent_space}"{key}": [{list_items}]')
+            else:
+                # Other types use the default json encoding
+                items.append(f'{indent_space}"{key}": {json.dumps(value)}')
+        return '{\n' + ',\n'.join(items) + f'\n{" " * ((level - 1) * indent)}}}'
+    
+    formatted_list = []
+    for item in data:
+        formatted_list.append(format_dict(item))
+    
+    # Combine formatted dictionaries into a single line for the top-level list
+    return '[\n  ' + ',\n  '.join(formatted_list) + '\n]'
+
+
 if __name__ == "__main__":
     # Read JSON data from a file
     with open('data.json', 'r') as f:
@@ -121,8 +146,11 @@ if __name__ == "__main__":
 
     # Validate and clean JSON data
     data = validate_table(data)
-    with open('data.json', 'w') as f:
-        json.dump(data, f)
+
+    # Write custom JSON file
+    custom_json_string = custom_json_dump(data, indent=2)
+    with open('output.json', 'w') as f:
+        f.write(custom_json_string)
 
     # Convert JSON to Markdown table
     convert_table(data, mapping)
