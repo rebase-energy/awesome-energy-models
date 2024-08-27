@@ -1,7 +1,50 @@
 import json
 
+def check_fields(data, fields):
+    print("Checking that all fields are present in data.")
+    for i, d in enumerate(data): 
+        for field in fields: 
+            if field not in d.keys():
+                print("Field {} not found in data[{}]".format(field, i))
+
+def check_attributes(data, mapping): 
+    print("Checking that all attributes are present in mapping.")
+    for i, d in enumerate(data): 
+        for field in mapping.keys(): 
+            attributes = d[field]
+            for attribute in attributes: 
+                if attribute not in mapping[field].keys(): 
+                    print("Attribute {} not found in {}".format(attribute, mapping[field].keys()))
+
+
+def sort_alphabetically(data): 
+    print("Sorting data by name alphabetically.")
+    data.sort(key=lambda x: x["name"].lower())
+    return data
+
+def sort_attributes_alphabetically(data, mapping):
+    print("Sorting attributes for each field alphabetically.")
+    for i, d in enumerate(data): 
+        for field in mapping.keys(): 
+            attributes = d[field]
+            sorted_strings = sorted(attributes, key=lambda x: x.lower())
+            if sorted_strings != attributes: 
+                print("Sorting attributes for data[{}][{}]".format(i, field))
+                data[i][field] = sorted_strings
+
+    return data
+
+def validate_table(data):
+    fields = ["name", "description", "code_type", "problem_type", "model_type", "energy_assets", "scale", "links"]
+
+    check_fields(data, fields)
+    check_attributes(data, mapping)
+    data = sort_alphabetically(data)
+    data = sort_attributes_alphabetically(data, mapping)
+    return data
+
 # Function to convert JSON data to a Markdown table
-def json_to_markdown_table(json_data, mapping):
+def convert_table(json_data, mapping):
     # Extracting headers
     headers = ["name", "description", "code_type", "problem_type", "model_type", "energy_assets", "scale", "links"]
     alignments = {"name": ":---", "description": ":---", "code_type": ":---:", "problem_type": ":---:", "model_type": ":---:", "energy_assets": ":---:", "scale": ":---:", "links": ":---:"}
@@ -76,8 +119,13 @@ if __name__ == "__main__":
     with open('mapping.json', 'r') as f:
         mapping = json.load(f)
 
+    # Validate and clean JSON data
+    data = validate_table(data)
+    with open('data.json', 'w') as f:
+        json.dump(data, f)
+
     # Convert JSON to Markdown table
-    json_to_markdown_table(data, mapping)
+    convert_table(data, mapping)
 
     # Insert the Markdown table into a README file
     insert_table()
