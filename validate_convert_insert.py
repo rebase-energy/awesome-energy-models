@@ -149,7 +149,7 @@ if __name__ == "__main__":
 
     # Write custom JSON file
     custom_json_string = custom_json_dump(data, indent=2)
-    with open('output.json', 'w') as f:
+    with open('data.json', 'w') as f:
         f.write(custom_json_string)
 
     # Convert JSON to Markdown table
