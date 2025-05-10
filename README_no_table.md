@@ -1,5 +1,5 @@
 <h1 align="center">
-    📚 awesome-energy-models
+    💡 awesome-energy-models
     <br>
 </h1>
 
