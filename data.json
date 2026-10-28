@@ -97,6 +97,20 @@
   }
 },
   {
+  "name": "odys",
+  "description": "Schedule an energy asset portfolio across electricity markets under price uncertainty.",
+  "code_type": ["framework"],
+  "problem_type": ["operations"],
+  "model_type": ["optimization"],
+  "energy_assets": ["battery", "fossil", "solar"],
+  "scale": ["asset"],
+  "links": {
+    "code": "https://github.com/ramirocrc/odys",
+    "docs": "https://ramirocrc.github.io/odys/",
+    "pypi": "https://pypi.org/project/odys/"
+  }
+},
+  {
   "name": "OpenSTEF",
   "description": "Open energy forecasting package.",
   "code_type": ["library"],

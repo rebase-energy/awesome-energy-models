@@ -7,6 +7,7 @@
 |`Grid2Op`|A framework to model sequential decision making in power grid operations.|🎬|🤖 ⚙️ 📈 🎮|⚡|[[code]](https://github.com/rte-france/Grid2Op), [[docs]](https://grid2op.readthedocs.io/en/latest/), [[pypi]](https://pypi.org/project/Grid2Op/), [[website]](https://l2rpn.chalearn.org/)|
 |`HOPP`|Assess optimal designs for the deployment of utility-scale hybrid energy plants.|📝|🎮|🔋 ☀️ 🌬️|[[code]](https://github.com/NREL/HOPP), [[docs]](https://hopp.readthedocs.io/en/latest/), [[pypi]](https://pypi.org/project/HOPP/)|
 |`Hydropowerlib`|Calculate feed-in time series of run-of-the-river hydropower plants.|📝|🎮|💦|[[code]](https://github.com/hydro-python/hydropowerlib)|
+|`odys`|Schedule an energy asset portfolio across electricity markets under price uncertainty.|🎬|⚙️|🔋 🏭 ☀️|[[code]](https://github.com/ramirocrc/odys), [[docs]](https://ramirocrc.github.io/odys/), [[pypi]](https://pypi.org/project/odys/)|
 |`OpenSTEF`|Open energy forecasting package.|🎬|📈|☀️ 🌬️|[[code]](https://github.com/OpenSTEF/openstef), [[docs]](https://openstef.github.io/openstef/), [[pypi]](https://pypi.org/project/openstef/)|
 |`OSESMO`|Calculate power flow of distribution grids.|📝|🎮|⚡|[[code]](https://github.com/RyanCMann/OSESMO/)|
 |`pandapipes`|Calculate fluid flow of pipe systems.|📝|🎮|♨️|[[code]](https://github.com/e2nIEE/pandapipes), [[docs]](https://pandapipes.readthedocs.io/en/latest/), [[pypi]](https://pypi.org/project/pandapipes/), [[website]](https://www.pandapipes.org/)|
