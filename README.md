@@ -63,6 +63,8 @@ In alphabetical order.
 |`pyCity`|Python package for data handling and scenario generation of city districts.|📝|🎮|🔋 🏠 ☀️ 🌬️|[[code]](https://github.com/RWTH-EBC/pyCity), [[pypi]](https://pypi.org/project/pycity-base/)|
 |`PYPOWER`|Power flow and Optimal Power Flow (OPF) solver. Port from MATPOWER to Python.|📝|🎮|⚡|[[code]](https://github.com/rwl/PYPOWER), [[docs]](https://rwl.github.io/PYPOWER/api/), [[pypi]](https://pypi.org/project/PYPOWER/)|
 |`pysam`|Python Wrapper for the System Advisor Model (SAM).|📝|🎮|🔋 🏠 ☀️ 🌬️|[[code]](https://github.com/NREL/pysam), [[docs]](https://nrel-pysam.readthedocs.io/en/main/), [[pypi]](https://pypi.org/project/pysam/)|
+|`solars-net-billing-calculator`|Commercial solar PV Net Billing self-consumption ROI and grid feed-in financial model.|📝|🎮|☀️ ⚡|[[code]](https://github.com/romangrid/solars-net-billing-calculator), [[website]](https://solars.com.ua/)|
+|`suneco-bess-sizing`|Commercial BESS LiFePO4 battery pack and hybrid inverter dimensioning simulation.|📝|🎮|🔋 ☀️|[[code]](https://github.com/romangrid/suneco-bess-sizing), [[website]](https://suneco.com.ua/)|
 |`TEASER`|Tool for Energy Analysis and Simulation for Efficient Retrofit.|📝|🎮|🏠|[[code]](https://github.com/RWTH-EBC/TEASER), [[pypi]](https://pypi.org/project/teaser/)|
 |`windpowerlib`|Calculate wind power production from meteorological variables.|📝|📈 🎮|🌬️|[[code]](https://github.com/wind-python/windpowerlib), [[docs]](https://windpowerlib.readthedocs.io/en/stable/index.html), [[pypi]](https://pypi.org/project/windpowerlib/), [[website]](https://oemof.org/)|
 
